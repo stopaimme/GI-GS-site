@@ -1,4 +1,4 @@
-This is the repository that contains the website of GI-GS
+This is the repository that contains the website of GI-GS: Global Illumination Decompositon on Gaussian Splatting for Inverse Rendering
 
 
 # Website License
