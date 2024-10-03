@@ -18,7 +18,11 @@ function ChangeScene(idx){
     }
     li_list[idx].className = "active";
     currentScene = currentSceneList[idx]
-    document.getElementById("all_video").src = "static/videos/" + currentScene +'.mp4';
+    const video = document.getElementById('all_video');
+    const source = video.querySelector('source');
+    source.src = "static/videos/" + currentScene +'.mp4';
+    video.load();
+    video.play();
 }
 
 function ChangeObject(idx){
@@ -33,5 +37,9 @@ function ChangeObject(idx){
     }
     li_list[idx].className = "active";
     currentObject = currentObjectList[idx]
-    document.getElementById("all_video").src = "static/videos/" + currentObject +'.mp4';
+    const video = document.getElementById('all_video');
+    const source = video.querySelector('source');
+    source.src = "static/videos/" + currentObject +'.mp4';
+    video.load();
+    video.play();
 }
