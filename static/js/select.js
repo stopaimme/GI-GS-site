@@ -1,8 +1,8 @@
-var currentSceneList = ["bicycle", "garden", "stump"];
+var currentSceneList = ["bicycle", "garden", "stump", "lego", "hotdog", "armadillo", "ficus"];
 var currentScene = "bicycle";
 
 var currentSceneList = ["lego", "hotdog", "armadillo", "ficus"];
-var currentScene = "lego";
+var currentObject = "lego";
 
 
 
@@ -33,5 +33,5 @@ function ChangeObject(idx){
     }
     li_list[idx].className = "active";
     currentObject = currentObjectList[idx]
-    document.getElementById("all_video").src = "static/videos/" + currentScene +'.mp4';
+    document.getElementById("all_video").src = "static/videos/" + currentObject +'.mp4';
 }
