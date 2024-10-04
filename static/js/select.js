@@ -8,6 +8,7 @@ var currentObject = "lego";
 
 function ChangeScene(idx){
     var li_list = document.getElementById("scene").children;
+    var li_list2 = document.getElementById("object").children;
     console.log(idx);
     console.log(li_list);
     for(i = 0; i < li_list.length; i++){
@@ -17,12 +18,19 @@ function ChangeScene(idx){
         li_list[i].className = "";
     }
     li_list[idx].className = "active";
+    for(i = 0; i < li_list2.length; i++){
+        if (li_list[i].className === "disabled"){
+            continue
+        }
+        li_list[i].className = "";
+    }
     currentScene = currentSceneList[idx]
     document.getElementById("all_video").src = "static/videos/" + currentScene +'.mp4';
 }
 
 function ChangeObject(idx){
     var li_list = document.getElementById("object").children;
+    var li_list = document.getElementById("scene").children;
     console.log(idx);
     console.log(li_list);
     for(i = 0; i < li_list.length; i++){
@@ -32,6 +40,12 @@ function ChangeObject(idx){
         li_list[i].className = "";
     }
     li_list[idx].className = "active";
+    for(i = 0; i < li_list2.length; i++){
+        if (li_list[i].className === "disabled"){
+            continue
+        }
+        li_list[i].className = "";
+    }
     currentObject = currentObjectList[idx]
     document.getElementById("all_video").src = "static/videos/" + currentObject +'.mp4';
 }
