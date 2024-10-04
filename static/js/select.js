@@ -1,4 +1,4 @@
-var currentSceneList = ["bicycle", "garden", "stump", "flowers", "treehill", "room", "counter", "kitchen", "bonsai"];
+var currentSceneList = ["bicycle", "flowers", "garden", "stump", "treehill", "room", "counter", "kitchen", "bonsai"];
 var currentScene = "bicycle";
 
 var currentObjectList = ["lego", "hotdog", "armadillo", "ficus"];
