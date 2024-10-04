@@ -185,9 +185,9 @@
             processes of objects is essential for achieving high-fidelity results. Therefore, it
             is critical to incorporate global illumination to account for indirect lighting that
             reaches an object after multiple bounces across the scene. Previous 3DGS-based
-            methods have attempted to model indirect lighting by characterizing indirect illumination as learnable lighting volumes or additional attributes of each Gaussian,
+            methods have attempted to model indirect lighting by characterizing indirect illumination as learnable lighting volumes or additional attributes of each Gaussian,
             while using baked occlusion to represent shadow effects. These methods, however, fail to accurately model the complex physical interactions between light and
-            objects, making it impossible to construct realistic indirect illumination during relighting. To address this limitation, we propose to calculate indirect lighting using
+            objects, making it impossible to construct realistic indirect illumination during relighting. To address this limitation, we propose to calculate indirect lighting using
             efficient path tracing with deferred shading. In our framework, we first render
             a G-buffer to capture the detailed geometry and material properties of the scene.
             Then, we perform physically-based rendering (PBR) only for direct lighting. With
