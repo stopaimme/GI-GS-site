@@ -31,7 +31,7 @@ function ChangeScene(idx){
 
 function ChangeObject(idx){
     var li_list = document.getElementById("object").children;
-    var li_list = document.getElementById("scene").children;
+    var li_list2 = document.getElementById("scene").children;
     console.log(idx);
     console.log(li_list);
     console.log(li_list2);
