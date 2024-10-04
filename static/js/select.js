@@ -18,11 +18,7 @@ function ChangeScene(idx){
     }
     li_list[idx].className = "active";
     currentScene = currentSceneList[idx]
-    const video = document.getElementById('all_video');
-    const source = video.querySelector('source');
-    source.src = "static/videos/" + currentScene +'.mp4';
-    video.load();
-    video.play();
+    document.getElementById("all_video").src = "static/videos/" + currentScene +'.mp4';
 }
 
 function ChangeObject(idx){
@@ -37,9 +33,5 @@ function ChangeObject(idx){
     }
     li_list[idx].className = "active";
     currentObject = currentObjectList[idx]
-    const video = document.getElementById('all_video');
-    const source = video.querySelector('source');
-    source.src = "static/videos/" + currentObject +'.mp4';
-    video.load();
-    video.play();
+    document.getElementById("all_video").src = "static/videos/" + currentObject +'.mp4';
 }
